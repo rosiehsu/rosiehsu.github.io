@@ -1,0 +1,10 @@
+.jumbotron {
+    background-color: rgba(124, 205, 64, 0.3);
+    color: #292b2c;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8;
+}
