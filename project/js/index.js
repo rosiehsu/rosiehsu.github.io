@@ -13,7 +13,10 @@ $('#deal').on('click', function() {
     var website = ["01", "44", "13", "33", "10", "06", "25", "12", "09", "57", "37", "53", "61", "59", "42", "20", "14", "50", "30", "56", "38", "64", "21", "35", "26", "18", "22", "52", "41", "4", "27", "23", "43", "28", "49", "31", "58", "47", "17", "45", "5", "48", "63", "39", "60", "29", "3", "8", "34", "32", "55", "62", "54", "40", "51", "16", "11", "46", "36", "15", "19", "7", "24", "2"]
     var r = Math.floor(Math.random() * 64); //1-64random一個數
 
-    $("#test").attr("href", "http://www.ai5429.com/17/8x/000" + website[r] + ".htm");
+    // $("#test").attr("href", "http://www.ai5429.com/17/8x/000" + website[r] + ".htm");
+    $('#test').on('click', function() {
+        $("iframe").attr("src", "http://www.ai5429.com/17/8x/000" + website[r] + ".htm")
+    });
     //result的那個鈕可以連網址 連到random的數
     console.log(r); //把數字印出來
     $("#result").val(""); //清空 因為是用input class
@@ -37,4 +40,17 @@ $('#deal').on('click', function() {
 
 });
 
-$('#test').on('click', testCard);
+
+
+$("a[href='#我是id']").click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});

@@ -5,3 +5,7 @@
 #我是id {
     background-image: url("./風景.jpg");
 }
+
+#result {
+    background: none;
+}
