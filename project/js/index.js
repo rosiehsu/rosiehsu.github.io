@@ -5,6 +5,10 @@
 //     else $("#coin" + i).attr("./css/塔羅牌背面.jpg")
 // }
 
+
+
+
+
 $('#deal').on('click', function() {
     // $('#data').empty();
     card = [];
@@ -36,6 +40,17 @@ $('#deal').on('click', function() {
         }
         $("#coin" + i).attr("width", "171px");
         $("#coin" + i).attr("height", "294px");
+
+        $("#coin" + i).rotate({
+            bind: {
+                click: function() {
+                    $(this).rotate({
+                        angle: 0,
+                        animateTo: 180
+                    })
+                }
+            }
+        })
     }
 
 });
@@ -54,3 +69,11 @@ $("a[href='#我是id']").click(function() {
         }
     }
 });
+
+
+
+/*$('.col>img').rotate({
+    duration: 6000,
+    angle: 0,
+    animateTo: 3600
+})*/
