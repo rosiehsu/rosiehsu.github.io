@@ -19,11 +19,18 @@ $('#deal').on('click', function() {
 
     // $("#test").attr("href", "http://www.ai5429.com/17/8x/000" + website[r] + ".htm");
     $('#test').on('click', function() {
-        $("iframe").attr("src", "http://www.ai5429.com/17/8x/000" + website[r] + ".htm")
+
+        $("iframe").remove()
+        $f = $("<iframe>").attr("src", "http://www.ai5429.com/17/8x/000" + website[r] + ".htm")
+        $f.attr("width", "1600px");
+        $f.attr("height", "1000px");
+        $("#我是id").append($f)
+
     });
     //result的那個鈕可以連網址 連到random的數
     console.log(r); //把數字印出來
     $("#result").val(""); //清空 因為是用input class
+
     for (var i = 1; i < 7; i++) {
         //for 迴圈就是從做6次
         console.log(r / Math.pow(2, 6 - i)); //2的6次方
@@ -69,6 +76,9 @@ $("a[href='#我是id']").click(function() {
         }
     }
 });
+
+
+
 
 
 
