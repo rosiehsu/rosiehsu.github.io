@@ -260,3 +260,23 @@ footer {
     bottom: 5px;
     right: 5px;
 }
+
+
+/*.col-2 .text-center.front {
+    
+    z-index: 8;
+    -webkit-transform: rotateY(180deg);
+}
+
+.col-2.text-center .back {
+   
+    z-index: 10;
+  
+    -webkit-transform: rotateY(0deg);
+}*/
+
+
+/*#coin1 {
+    transform: rotate(206.8deg);
+    transform-origin: 50% 50% 0px;
+}*/

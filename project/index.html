@@ -7,12 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
     <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
     <title>your future
 
     </title>
@@ -88,17 +85,48 @@
             </div>
         </div>
         </div>
+        <iframe src="#" height="1000px" width="1600px">
+            <p>Your browser does not support iframes.</p>
+        </iframe>
 
 
+        <!--<script type="text/javascript">
+            $(function() {
+                //1. Random Shuffle all cards in the variation
+                evanescence.Pokermatching.variation.sort(shuffle);
+                var $card = $("");
+                for (var i = 0; i < 11; i++) {
+                    $card.clone().appendTo($("#cards"));
+                }
+                //2.
+                $(".card").each(function(index) {
+                    //Set coordinate
+                    $(this).css({
+                        "left": (evanescence.Pokermatching.cardWidth + 20) * (index % 4) + "px",
+                        "top": (evanescence.Pokermatching.cardHeight + 20) * Math.floor(index / 4) + "px"
+                    });
+                    //Output a card number
+                    var suit = evanescence.Pokermatching.variation.pop();
+                    //temporary card number
+                    $(this).data("pattern", suit);
+                    //Corresponding card after reversing
+                    $(this).find(".back").addClass(suit);
+                    //Click card function
+                    $(this).click(selectCard);
+                });
+            });
+        </script>-->
 
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <!--<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js></script>-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
         <!-- 引入我們自己寫的 JavaScript -->
-        <script src="./js/bootstrap.min.js"></script>
-        <script src="./js/jquery.js"></script>
+        <script src="./js/rotate.js"></script>
+        <!--<script src="./js/bootstrap.min.js"></script>
+        <script src="./js/jquery.js"></script>-->
         <script src="./js/index.js"></script>
 </body>
 
