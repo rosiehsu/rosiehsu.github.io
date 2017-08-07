@@ -19,7 +19,7 @@ $('#deal').on('click', function() {
 
     // $("#test").attr("href", "http://www.ai5429.com/17/8x/000" + website[r] + ".htm");
     $('#test').on('click', function() {
-        $("iframe").attr("src", "https://www.ai5429.com/17/8x/000" + website[r] + ".htm")
+        $("iframe").attr("src", "http://www.ai5429.com/17/8x/000" + website[r] + ".htm")
     });
     //result的那個鈕可以連網址 連到random的數
     console.log(r); //把數字印出來
