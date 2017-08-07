@@ -53,7 +53,7 @@ $('#deal').on('click', function() {
                 click: function() {
                     $(this).rotate({
                         angle: 0,
-                        animateTo: 180
+                        animateTo: 360
                     })
                 }
             }
