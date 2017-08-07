@@ -5,7 +5,7 @@ $('#insert').on('click', function() {
         count: +$('#InputProductCount').val(),
         image: $('#InputProductImage').val()
     }
-    $.post("http://js2017-hw2.kchen.club/insert", data, function(response) {
+    $.post("https://js2017-hw2.kchen.club/insert", data, function(response) {
         if (response) {
             if (response.result) {
                 $('#message').text('新增成功');
@@ -21,7 +21,7 @@ $('#insert').on('click', function() {
 })
 
 $('#query').on('click', function() {
-    $.get("http://js2017-hw2.kchen.club/query", function(response) {
+    $.get("https://js2017-hw2.kchen.club/query", function(response) {
         if (response) {
             if (response.result) {
                 $("#product-list").empty(); //先清空
